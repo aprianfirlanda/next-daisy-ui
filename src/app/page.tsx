@@ -95,6 +95,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <button className="btn">Button</button>
       </footer>
     </div>
   );
