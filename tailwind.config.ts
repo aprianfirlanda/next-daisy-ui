@@ -13,6 +13,9 @@ const config: Config = {
             }
         }
     },
-    plugins: [tailwindcssAnimated, tailwindcssTypography, daisyui]
+    plugins: [tailwindcssAnimated, tailwindcssTypography, daisyui],
+    daisyui: {
+        themes: ['light']
+    }
 };
 export default config;

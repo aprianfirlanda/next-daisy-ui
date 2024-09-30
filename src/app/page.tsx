@@ -55,7 +55,7 @@ export default function Home() {
                     <Image aria-hidden src="https://nextjs.org/icons/globe.svg" alt="Globe icon" width={16} height={16} />
                     Go to nextjs.org →
                 </a>
-                <button className="btn">Button</button>
+                <button className="btn btn-primary">Button</button>
             </footer>
         </div>
     );
