@@ -4,7 +4,7 @@ import LogoutIcon from '@/components/icons/LogoutIcon';
 
 function DashboardNavbar() {
     return (
-        <div className="navbar bg-base-100 p-4 shadow-xl">
+        <div className="navbar sticky top-0 bg-base-100 p-4 shadow-xl">
             <div className="flex-none">
                 <button className="btn btn-circle btn-ghost">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block size-5 stroke-current">
