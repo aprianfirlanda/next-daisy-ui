@@ -1,14 +1,20 @@
-'use client';
 import React from 'react';
 import MenuItem from '@/components/layouts/dashboard/MenuItem';
 import { iconMapping, menus } from '@/constants';
 import { IconName } from '@/types';
+import Link from 'next/link';
 
-function Sidebar() {
+interface Props {
+    isSidebarActive: boolean;
+}
+
+function Sidebar({ isSidebarActive }: Props) {
     return (
-        <div className="flex h-dvh w-64 flex-col p-4">
+        <div className={`flex h-dvh w-64 flex-col p-4 ${!isSidebarActive && 'hidden'}`}>
             <div className="mb-5 flex justify-center">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <Link href="/" className="btn btn-ghost text-xl">
+                    daisyUI
+                </Link>
             </div>
             <ul className="menu h-5/6 w-56 overflow-y-auto rounded-box bg-base-200">
                 {menus.map(({ icon, name, url }) => (
