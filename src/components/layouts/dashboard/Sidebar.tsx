@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import MenuItem from '@/components/layouts/dashboard/MenuItem';
 import { iconMapping, menus } from '@/constants';
@@ -10,8 +11,8 @@ function Sidebar() {
                 <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
             <ul className="menu h-4/5 w-56 overflow-y-auto rounded-box bg-base-200">
-                {menus.map(({ icon, name }) => (
-                    <MenuItem key={name} Icon={iconMapping[icon as IconName]} name={name} />
+                {menus.map(({ icon, name, url }) => (
+                    <MenuItem key={name} Icon={iconMapping[icon as IconName]} name={name} url={url} />
                 ))}
             </ul>
         </div>

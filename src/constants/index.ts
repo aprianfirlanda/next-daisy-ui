@@ -4,7 +4,8 @@ import HomeIcon from '@/components/icons/HomeIcon';
 export const menus = [
     {
         icon: 'home',
-        name: 'Dashboard'
+        name: 'Dashboard',
+        url: '/console'
     }
 ];
 
