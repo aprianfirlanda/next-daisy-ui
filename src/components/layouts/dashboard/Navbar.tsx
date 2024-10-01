@@ -2,7 +2,7 @@ import React from 'react';
 import UserProfileIcon from '@/components/icons/UserProfileIcon';
 import LogoutIcon from '@/components/icons/LogoutIcon';
 
-function DashboardNavbar() {
+function Navbar() {
     return (
         <div className="navbar sticky top-0 bg-base-100 p-4 shadow-xl">
             <div className="flex-none">
@@ -13,7 +13,7 @@ function DashboardNavbar() {
                 </button>
             </div>
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost hidden text-xl">daisyUI</a>
             </div>
             <div className="flex-none">
                 <div className="tooltip tooltip-bottom hidden md:block" data-tip="Profile">
@@ -52,4 +52,4 @@ function DashboardNavbar() {
     );
 }
 
-export default DashboardNavbar;
+export default Navbar;
